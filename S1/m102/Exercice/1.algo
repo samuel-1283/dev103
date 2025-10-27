@@ -1,0 +1,12 @@
+algorithme bienvenue
+   variables nom : chaine de caractère
+   variables age : entier
+début
+
+    écrire("veuillez saisir votre nom :")
+    lire(nom)
+    écrire("veuillez saisir vote age :")
+    lire(age)
+    écrire("bonjour",nom,"tu as ",age) 
+  
+fin

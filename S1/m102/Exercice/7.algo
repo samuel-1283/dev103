@@ -1,0 +1,15 @@
+algorithme echange_avec_variables
+ variables a,b,c :réel
+début
+    écrire("veuillez saisir a et b :")
+    lire(a,b)
+    
+    c <-- a
+    a <-- b
+    b <-- c
+
+    écrire("la nouvelle valeur de a est :",a)
+    écrire("la nouvelle valeur de b est :",b) 
+
+    
+fin

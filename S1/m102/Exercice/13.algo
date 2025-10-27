@@ -1,0 +1,25 @@
+algorithme facture
+   variables n : entier
+   variables f,p :réel
+début
+    écrire("veuillez saisir le nombre de photocopies :")
+    lire(n)
+    
+    si n <= 10 alors
+        p <-- 0.30
+        f <-- (p*n)
+        écrire("facture :", f)
+    sinon
+        si n > 10 et n <= 20 alors
+            p <-- 0.25 
+            f <-- (p*n)
+            écrire("facture :", f)
+        sinon
+            p <-- 0.20 
+            f <-- (p*n)
+            écrire("facture :", f)
+        fin_si
+    fin_si    
+
+    
+fin

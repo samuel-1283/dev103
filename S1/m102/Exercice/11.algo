@@ -1,0 +1,13 @@
+algorithme signe
+   variables a :entier
+début
+    écrire("veuillez saisir a :")
+    lire(a)
+    
+    si a >=0 alors
+        écrire("a est positif.")
+        sinon 
+        écrire("a est negatif.") 
+    fin_si 
+    
+fin

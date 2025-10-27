@@ -1,0 +1,11 @@
+algorithme somme
+variables
+    s,i :entier
+début
+    s <-- 0
+    Pour i <-- 0 a 20 pas 1 faire 
+       s <-- s+i
+      écrire(s)  
+    fin_pour
+
+fin

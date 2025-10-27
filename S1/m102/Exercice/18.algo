@@ -1,0 +1,23 @@
+algorithme tant_que
+   variables n :entier
+début
+    écrire("veuillez saisir un nombre entre 10 et 20 :") 
+    lire(n)
+
+    tant que n < 10 ou n > 20  faire
+        si n < 10 alors
+            écrire("plus petite.")
+        sinon
+            si n > 20 alors
+                écrire("plus grande.")
+            fin_si
+        fin_si  
+        
+    écrire("veuillez saisir un nombre entre 10 et 20 :") 
+    lire(n)
+      
+    fin_tant_que
+    écrire("bravo") 
+
+    
+fin

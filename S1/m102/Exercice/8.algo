@@ -1,0 +1,13 @@
+algorithme echange_sans_variable
+   variables a,b : réel
+début
+    écrire("veuillez saisir a et b :")
+    lire(a,b) 
+
+    a <-- (a+b)
+    b <-- (a-b)
+    a <-- (a-b)
+
+    écrire("la nouvelle valeur de a est :", a)
+    écrire("la nouvelle valeur de b est :", b)  
+fin

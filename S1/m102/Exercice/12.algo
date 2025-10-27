@@ -1,0 +1,17 @@
+algorithme temperature
+   variables t : réel
+début
+    écrire("veuillez saisir la temperatire de l'eau :")
+    lire(t)
+    
+    si t < 0 alors
+        écrire("l'eau est glace.")
+    sinon
+        si t > 0 et t < 100 alors
+            écrire("l'eau est liquide.")
+        sinon
+            écrire("l'eau est vapeur.")   
+        fin_si
+    fin_si
+    
+fin

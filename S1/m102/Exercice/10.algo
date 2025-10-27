@@ -1,0 +1,15 @@
+algorithme maximum
+   variables a,b:réel
+début
+    écrire("veuillez saisir a")
+    lire(a) 
+    écrire("veuillez saisir b")
+    lire(b) 
+
+    si a >= b alors
+        écrire("a est le nombre le plus grande ")
+    sinom
+      écrire("b est le nombre le plus grande ") 
+    fin_si       
+    
+fin

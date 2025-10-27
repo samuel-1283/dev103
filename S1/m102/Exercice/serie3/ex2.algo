@@ -1,0 +1,11 @@
+algorithme pair_ou_impair
+ variables n :entier
+début
+    écrire("entrer un nombre entier :")
+    lire(n) 
+    si n mod 2 = 0 alors
+        écrire("le nombre est pair")
+    sinon
+        écrire("le nombre est impair")
+    fin_si  
+fin

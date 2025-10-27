@@ -1,0 +1,16 @@
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+section::after {
+  content: "";
+  display: table;
+  clear: both;}
+  header{
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}

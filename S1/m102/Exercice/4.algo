@@ -1,0 +1,18 @@
+algorithme operation
+   variables x,y,s,pr,df,dv :réel
+début
+    écrire("veuillez saisir un nombre x :")
+    lire(x)
+    écrire("veuillez saisir un nombre y :")
+    lire(y)
+
+    s <-- x+y
+    pr <-- x*y
+    df <-- X-y
+    dv <-- x/y
+
+    écrire("somme:",s,"produit :",pr,"difference :",df,"division :",dv) 
+
+
+    
+fin

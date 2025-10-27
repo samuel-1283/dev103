@@ -1,0 +1,14 @@
+Algorithme maximum_trois
+Variables
+    a, b, c, max : Réel
+Début
+    Lire(a, b, c)
+    max ← a
+    Si b > max Alors
+        max ← b
+    FinSi
+    Si c > max Alors
+        max ← c
+    FinSi
+    Écrire("Le maximum est : ", max)
+Fin

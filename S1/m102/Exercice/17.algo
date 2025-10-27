@@ -1,0 +1,14 @@
+algorithme 17
+   variables n,i :entier 
+début
+    écrire("saisir un nombre de depart :")
+    lire(n)
+
+    pour i de n+1 à N+10 pas 1 faire
+        
+        écrire(i) 
+        
+    fin_pour
+
+    
+fin

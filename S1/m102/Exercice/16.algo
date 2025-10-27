@@ -1,0 +1,17 @@
+algorithme jour_semaine
+   variables n :entier
+début
+    écrire("veuillez saisir un nombre de jour de semaine :")
+    lire(n)
+    
+    cas n vaut 
+       1 : écrire("lundi") 
+       2 : écrire("mardi") 
+       3 : écrire("mercredi") 
+       4 : écrire("jeudi") 
+       5 : écrire("vendredi") 
+       6 : écrire("samedi") 
+       7 : écrire("demanche")
+    fincas 
+    
+fin

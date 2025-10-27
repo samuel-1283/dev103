@@ -1,0 +1,14 @@
+algorithme temps
+  variables t,h,m,s,r :réel
+début
+    écrire("veuillez saisir un temps en seconds :")
+    lire(t)
+    
+    h <-- t div 3600
+    r <-- t mod 3600
+    m <-- r div 60
+    s <-- r mod 60
+
+    écrire(h,":",m,":",s) 
+    
+fin

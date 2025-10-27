@@ -1,0 +1,23 @@
+algorithme age
+   variables a :réel
+début
+    écrire("veuillez saisir votre age :")
+    lire(a)
+    
+    si a > 6 et a < 7 alors
+        écrire("pussin")
+    sinon
+        si a > 8 et a < 9 alors
+            écrire("Pupille")
+        sinon
+            si a > 10 et a < 11 alors
+                écrire("minime")
+            sinon
+                si a >= 12 alors
+                    écrire("cadet")
+                fin_si
+            fin_si
+        fin_si
+    fin_si 
+          
+fin

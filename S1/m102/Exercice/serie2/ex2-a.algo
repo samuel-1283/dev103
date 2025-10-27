@@ -1,0 +1,9 @@
+Algorithme moyenne_simple
+Variables
+    n1, n2, n3, moy : Réel
+Début
+    Écrire("Entrer les trois notes : ")
+    Lire(n1, n2, n3)
+    moy ← (n1 + n2 + n3) / 3
+    Écrire("La moyenne est : ", moy)
+Fin

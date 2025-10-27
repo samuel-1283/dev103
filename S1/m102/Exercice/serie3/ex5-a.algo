@@ -1,0 +1,11 @@
+Algorithme signe_produit
+Variables
+    a, b : Réel
+Début
+    Lire(a, b)
+    Si (a > 0 ET b > 0) OU (a < 0 ET b < 0) Alors
+        Écrire("Le produit est positif")
+    Sinon
+        Écrire("Le produit est négatif")
+    FinSi
+Fin

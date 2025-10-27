@@ -1,0 +1,12 @@
+algorithme puissance
+    variables x,y,p :réel
+début
+    écrire("veuillez saisir le nombre x :")
+    lire(x)
+    écrire("veuillez saisir le nombre y :")  
+    lire(y)
+
+    p <-- (x^y)
+    écrire("resultat :",p) 
+    
+fin

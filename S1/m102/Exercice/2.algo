@@ -1,0 +1,15 @@
+algorithme perimetre
+    variables lon,lar,s,p :réel
+début
+    
+    écrire("veuillez saisir la longeur de la rectangle :")
+    lire(lon)
+    écrire("veuillez saisir la largeur de la rectangle :") 
+    lire(lar)
+    s <-- (lon*lar)
+    écrire("la surface est :",s)
+    p <-- (lon+lar)*2
+    écrire("perimetre :", p) 
+     
+
+fin

@@ -1,0 +1,13 @@
+algorithme note
+  variables n1,n2,n3,n4,n5,s,m :réel
+début
+    écrire("veuillez saisir vote 5 notes :")
+    lire(n1,n1,n3,n4,n5) 
+
+    s <-- (n1+n2+n3+n4+n5)
+    m <-- (s/5)
+
+    écrire("la somme de votre notes est :",s)
+    écrire("la moyenne de votre notes est :",m)  
+    
+fin

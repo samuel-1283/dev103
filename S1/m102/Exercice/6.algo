@@ -1,0 +1,12 @@
+algorithme volume
+  constant pi = 3.14
+  variables v,r :réel
+début
+    écrire("veuillez saisir le rayon de la sphere :")
+    lire(r)
+    
+    v <-- (4*pi*r^3)/3
+
+    écrire("le volume de la sphere est :",v) 
+    
+fin

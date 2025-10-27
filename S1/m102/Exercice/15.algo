@@ -1,0 +1,24 @@
+algorithme equation
+  variables a,b,c,r,d,x1,x2,x:réel
+début
+    
+    écrire("veuillez saisir a ,b ,c :")
+    lire(a,b,c)
+    
+    r <-- racine(d)
+    d <-- (b^2)-4*a*c
+    
+    si d > 0 alors
+        x1 <-- (-b-r)/2*a
+        x2 <-- (-b+r)/2*a
+        écrire("l'equation admet deux solutions x1 :",x1 ,"et x2 :",x2) 
+    sinon
+        si d = 0 alors
+            x <-- (-b)/2*a
+            écrire("l'equation admet une seule solition :",x)
+        sinon
+            écrire("l'equation n'admet pas une solution")
+        fin_si
+    fin_si  
+
+fin

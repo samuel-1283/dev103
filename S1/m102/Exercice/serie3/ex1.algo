@@ -1,0 +1,11 @@
+algorithme valeur_absolue
+  variables 
+    x :réel
+début
+    écrire("veuillez saisir un nombre :")\
+    lire(x)
+    si x < 0 alors 
+      x <-- (-x)
+    fin_si
+    écrire("la valeur absolue est :",x) 
+fin

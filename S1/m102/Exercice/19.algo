@@ -1,0 +1,9 @@
+algorithme table_7
+variables
+    m,i :entier
+début
+    pour i <-- 0 à 10 pas 1  faire
+        m <-- i*7
+        écrire(i,"*7 =",m) 
+    fin_pour
+fin

@@ -1,0 +1,11 @@
+Algorithme moyenne_ponderee
+Variables
+    n1, n2, n3, c1, c2, c3, moy : Réel
+Début
+    Écrire("Entrer les trois notes : ")
+    Lire(n1, n2, n3)
+    Écrire("Entrer les trois coefficients : ")
+    Lire(c1, c2, c3)
+    moy ← (n1*c1 + n2*c2 + n3*c3) / (c1 + c2 + c3)
+    Écrire("La moyenne pondérée est : ", moy)
+Fin

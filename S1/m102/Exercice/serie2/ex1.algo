@@ -1,0 +1,13 @@
+Algorithme carre_nombre
+Variables
+    x, carre, cube, inverse: Réel
+Début
+    Écrire("Entrer un nombre : ")
+    Lire(x)
+    carre ← x * x
+    cube <-- x * x * x
+    inverse <-- 1 / x
+    Écrire("Le carré de ", x, " est ", carre)
+    Écrire("Le cube de ", x, " est ", cube)
+    Écrire("L'inverse de ", x, " est ", inverse)
+Fin

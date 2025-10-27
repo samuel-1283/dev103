@@ -1,0 +1,12 @@
+Algorithme ordre_alphabetique
+Variables
+    a, b, c : Caractère
+Début
+    Écrire("Entrer trois lettres : ")
+    Lire(a, b, c)
+    Si (a ≤ b) ET (b ≤ c) Alors
+        Écrire("Les lettres sont en ordre alphabétique")
+    Sinon
+        Écrire("Les lettres ne sont pas en ordre alphabétique")
+    FinSi
+Fin

@@ -1,0 +1,12 @@
+Algorithme permutation_sans_temp
+Variables
+    a, b : Réel
+Début
+    Écrire("Entrer a et b : ")
+    Lire(a, b)
+    Écrire("Avant permutation : a=", a, " b=", b)
+    a ← a + b
+    b ← a - b
+    a ← a - b
+    Écrire("Après permutation : a=", a, " b=", b)
+Fin
