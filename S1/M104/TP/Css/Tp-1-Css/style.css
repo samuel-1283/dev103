@@ -19,7 +19,7 @@ h1{
 blockquote{
     font-style: italic;
     font-size: 1.2em;
-    margin-right: 0px 80px 20px 60px;
+    margin: 0px 80px 20px 60px;
     background-color: #bdd3e4;
     color: #444;
     border-left: solid 5px #8870ff;
