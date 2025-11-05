@@ -1,0 +1,111 @@
+section { min-height: 90vh; padding: 20px;}
+html{ scroll-behavior: smooth;}
+
+.navigation ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navigation ul a:hover{
+    background-color: #cb6cbe;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+body {
+    background-color: #1f1f1f;
+    color:white;
+    
+}
+#logo {
+    border-radius: 50%;
+    display: inline;
+}
+.menu {
+    display: flex;
+    cursor: pointer;
+    margin-left: auto;
+    
+    
+}
+.navigation input {
+    box-shadow: 3px 4px 2px #cb6cbe;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+}
+.navigation div {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 2em;
+}
+section {
+    text-align: center;
+}
+main section h1 {
+    text-shadow: 2px 2px 6px #ffffff;
+    margin-top: -16px;
+}
+
+.card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    width: 100px;
+    margin-right:220px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+.container:hover > :not(:hover){
+    opacity: 0.3;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.container{
+    display: flex;
+    width: 200px;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    padding-top: 50px;
+}
+.navigation2 ul {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.navigation2 ul a:hover{
+    color: #000000;
+}
+.navigation2 {
+    display: flex;
+    align-items: center;
+    background-color: #cb6cbe;
+    
+}
+.navigation2 ul li a{
+    text-decoration: none;
+    color:#fff;
+}
+.details {
+    display: flex;
+    background-color: #fff;
+    margin-top: 20px;
+    padding:9px ;
+}
