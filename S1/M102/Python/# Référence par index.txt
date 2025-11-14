@@ -1,0 +1,162 @@
+# Référence par index
+print("Bonjour, je m'appelle {0} et j'ai {1} ans".format(nom, age))
+print("{1} a {0} ans".format(age, nom))  # Ordre inversé
+
+# Référence par nom
+print("Bonjour, je m'appelle {n} et j'ai {a} ans".format(n=nom, a=age))
+
+# Formatage des nombres
+pi = 3.14159
+print("Valeur de pi: {:.2f}".format(pi))  # 2 décimales
+print("Valeur de pi: {:.4f}".format(pi))  # 4 décimales
+
+print("\n" + "=" * 50)
+print("8- F-STRINGS (Python 3.6+)")
+print("=" * 50)
+
+nom = "Ali"
+age = 45
+pi = 3.14159
+
+# F-strings (méthode moderne et recommandée)
+print(f"Bonjour, je m'appelle {nom} et j'ai {age} ans")
+print(f"Valeur de pi: {pi:.2f}")
+print(f"Calcul: {age * 2} = {age} × 2")
+
+# Expressions dans f-strings
+print(f"Majuscule: {nom.upper()}")
+print(f"Année de naissance: {2025 - age}") ============================================
+# MÉTHODES DES CHAÎNES DE CARACTÈRES EN PYTHON
+# ============================================
+
+print("=" * 50)
+print("1- RECHERCHE DE PREMIÈRE OCCURENCE")
+print("=" * 50)
+texte = "Bonjour DEV 103"
+caract = input("Déclarer un caractère: ")
+index = -1
+for i in range(len(texte)):
+    if texte[i] == caract:
+        index = i
+        break
+if index != -1:
+    print(f"1ère occurrence de '{caract}' à l'index: {index}")
+else:
+    print(f"Caractère '{caract}' non trouvé")
+
+print("\n" + "=" * 50)
+print("2- STRIP, RSTRIP, LSTRIP")
+print("=" * 50)
+texte = "   python   "
+print(f"Original: '{texte}'")
+print(f"strip():  '{texte.strip()}'")   # Enlève espaces des 2 côtés
+print(f"rstrip(): '{texte.rstrip()}'")  # Enlève espaces à droite
+print(f"lstrip(): '{texte.lstrip()}'")  # Enlève espaces à gauche
+
+texte2 = "####python###"
+print(f"\nOriginal: '{texte2}'")
+print(f"strip('#'): '{texte2.strip('#')}'")  # Enlève # des 2 côtés
+
+print("\n" + "=" * 50)
+print("3- REPLACE")
+print("=" * 50)
+texte1 = "bonjour bonjour et encore bonjour"
+# Remplacer toutes les occurrences
+texte2 = texte1.replace("bonjour", "bonsoir")
+print(f"Tout remplacer: {texte2}")
+
+# Remplacer seulement 1 occurrence
+texte3 = texte1.replace("bonjour", "bonsoir", 1)
+print(f"Remplacer 1 fois: {texte3}")
+
+# Remplacer 2 occurrences
+texte4 = texte1.replace("bonjour", "bonsoir", 2)
+print(f"Remplacer 2 fois: {texte4}")
+
+print("\n" + "=" * 50)
+print("4- RECHERCHE, POSITION ET COMPTAGE")
+print("=" * 50)
+
+# FIND (cherche de gauche à droite, retourne -1 si non trouvé)
+texte = "python est génial"
+print(f"\nMéthode find():")
+print(f"texte.find('est'): {texte.find('est')}")
+print(f"texte.find('python', 10): {texte.find('python', 10)}")  # -1 (pas trouvé après index 10)
+print(f"texte.find('génial', 0, 10): {texte.find('génial', 0, 10)}")  # -1 (pas dans plage)
+
+# RFIND (cherche de droite à gauche)
+texte1 = "python est génial. python est puissant."
+print(f"\nMéthode rfind():")
+print(f"texte1.rfind('python'): {texte1.rfind('python')}")  # Dernier 'python'
+print(f"texte1.rfind('java'): {texte1.rfind('java')}")  # -1 (non trouvé)
+print(f"texte1.rfind('python', 0, 15): {texte1.rfind('python', 0, 15)}")  # Premier 'python'
+
+# INDEX (comme find mais lève une exception si non trouvé)
+texte = "python est génial"
+print(f"\nMéthode index():")
+print(f"texte.index('python'): {texte.index('python')}")
+print(f"texte.index('est'): {texte.index('est')}")
+# print(texte.index('java'))  # ValueError si décommenté
+
+# RINDEX (comme rfind mais lève une exception si non trouvé)
+texte1 = "python est génial. python est puissant."
+print(f"\nMéthode rindex():")
+print(f"texte1.rindex('python'): {texte1.rindex('python')}")
+# print(texte1.rindex('java'))  # ValueError si décommenté
+
+# COUNT (compte les occurrences)
+print(f"\nMéthode count():")
+print(f"texte1.count('python'): {texte1.count('python')}")  # 2
+print(f"texte1.count('python', 10): {texte1.count('python', 10)}")  # 1 (après index 10)
+print(f"texte1.count('est'): {texte1.count('est')}")  # 2
+
+print("\n" + "=" * 50)
+print("5- DÉCOUPAGE ET ASSEMBLAGE")
+print("=" * 50)
+
+# SPLIT (découpe en liste)
+print("\nMéthode split():")
+texte = "bonjour tout le monde"
+mots = texte.split()
+print(f"Mots: {mots}")
+
+chaine = "2025-01-05"
+parties = chaine.split("-")
+print(f"Date découpée: {parties}")
+
+# PARTITION (découpe en 3 parties)
+print("\nMéthode partition():")
+texte = "python est génial"
+resultat = texte.partition("est")
+print(f"Résultat: {resultat}")  # ('python ', 'est', ' génial')
+
+# JOIN (assemble une liste en chaîne)
+print("\nMéthode join():")
+mots = ["bonjour", "tout", "le", "monde"]
+phrase = " ".join(mots)
+print(f"Phrase: {phrase}")
+
+liste = ["07", "01", "2025"]
+date = "-".join(liste)
+print(f"Date: {date}")
+
+print("\n" + "=" * 50)
+print("6- CONVERSION ET LONGUEUR")
+print("=" * 50)
+nombre = 42
+chaine = str(nombre)
+print(f"str(42): '{chaine}' (type: {type(chaine)})")
+
+texte = "python"
+longueur = len(texte)
+print(f"len('python'): {longueur}")
+
+print("\n" + "=" * 50)
+print("7- FORMATAGE AVEC .format()")
+print("=" * 50)
+
+nom = "Ali"
+age = 30
+print("Bonjour, je m'appelle {} et j'ai {} ans".format(nom, age))
+
+#

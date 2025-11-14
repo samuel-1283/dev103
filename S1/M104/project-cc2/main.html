@@ -3,122 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Gaming - PC Parts & Systems</title>
+    <title>Samtech</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">⚡ APEX GAMING</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="Category/PC Components.html">Parts</a></li>
-                <li><a href="Category/Pre-Built PCs.html">Pre-Built</a></li>
-                <li><a href="Category/Portable Gaming.html">Portable</a></li>
-                <li><a href="contact.html">About</a></li>
-            </ul>
-            <div class="cart-icon">🛒 Cart (0)</div>
+    <header class="head-page">
+        <nav class="navigation">
+            <div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <input type="text" id="recherche" placeholder="Rechercher...">
         </nav>
     </header>
-
-    <section class="hero" id="home">
-        <h1>Power Up Your Gaming Experience</h1>
-        <p>Premium PC Parts, Custom Builds, and Portable Gaming Systems</p>
-        <button class="cta-button">Shop Now</button>
-    </section>
-
-    <section class="categories">
-        <h2 class="section-title">Shop by Category</h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <div class="category-icon">🔧</div>
-                <h3>PC Components</h3>
-                <p>High-performance parts for your custom build</p>
-            </div>
-            <div class="category-card">
-                <div class="category-icon">🖥️</div>
-                <h3>Pre-Built PCs</h3>
-                <p>Ready-to-go gaming systems</p>
-            </div>
-            <div class="category-card">
-                <div class="category-icon">💼</div>
-                <h3>Portable Gaming</h3>
-                <p>Gaming laptops and handheld devices</p>
-            </div>
+    <main>
+        <!--Articles-->
+       <section id="best-seller">
+        <h1>Best Seller</h1>
+        <div class="container">
+            <article class="article">
+                <img src="photos/elite.png" alt="">
+                <hr><span>Gaming PC Elite</span>
+                <p>RTX 4080 | i9-13900K</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="article">
+                <img src="photos/fast-ssd.png" alt="">
+                <hr><span>2TB NVMe SSD</span>
+                <p>Ultra-fast storage</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="article">
+                <img src="photos/gaming laptop.png" alt="">
+                <hr>
+                <span>Gaming Laptop Pro</span>
+                <p>RTX 4070 | 17" Display</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="article">
+                <img src="photos/RAM-XPG-Lancer-32GB-7200MHz-DDR5-Noir1-Photoroom.png" alt="">
+                <hr>
+                <span>32Gb DDR5 RAM</span>
+                <p>High-speed memory kit</p>
+                <button>Add to Cart</button>
+            </article>
+            <article class="article">
+                <img src="photos/rtx-4090.png" alt="" class="fix">
+                <hr>
+                <span>RTX 4090 Graphics Card</span>
+                <p>Ultimate gaming performance</p>
+                <button>Add to Cart</button>
+            </article>
+            <article>
+                <img src="photos/7950X.png" alt="" class="fix">
+                <hr>
+                <span>AMD Ryzen 9 7950X</span>
+                <p>16-core gaming processor</p>
+                <button>Add to Cart</button>
+            </article>
         </div>
-    </section>
-
-    <section class="products" id="parts">
-        <h2 class="section-title">Featured Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image"><img src="photos/rtx-4090.png" width="500px"></div>
-                <div class="product-info">
-                    <h3>RTX 4090 Graphics Card</h3>
-                    <p>Ultimate gaming performance</p>
-                    <div class="product-price">$1,599</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image"><img src="photos/7950X.png" alt="" width="400px"></div>
-                <div class="product-info">
-                    <h3>AMD Ryzen 9 7950X</h3>
-                    <p>16-core gaming processor</p>
-                    <div class="product-price">$699</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image"><img src="photos/RAM-XPG-Lancer-32GB-7200MHz-DDR5-Noir1-Photoroom.png" alt="" width="300px"></div>
-                <div class="product-info">
-                    <h3>32GB DDR5 RAM</h3>
-                    <p>High-speed memory kit</p>
-                    <div class="product-price">$249</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image"><img src="photos/elite.png" alt="" width="200px"></div>
-                <div class="product-info">
-                    <h3>Gaming PC Elite</h3>
-                    <p>RTX 4080 | i9-13900K</p>
-                    <div class="product-price">$2,999</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image"><img src="photos/gaming laptop.png" alt="" width="300px"></div>
-                <div class="product-info">
-                    <h3>Gaming Laptop Pro</h3>
-                    <p>RTX 4070 | 17" Display</p>
-                    <div class="product-price">$1,899</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-            <div class="product-card">
-                <div class="product-image"><img src="photos/fast-ssd.png" alt="" width="300px"></div>
-                <div class="product-info">
-                    <h3>2TB NVMe SSD</h3>
-                    <p>Ultra-fast storage</p>
-                    <div class="product-price">$179</div>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
+       </section>
+       <!--Categories-->
+       <section id="products">
+        <h1>Shop by Categories</h1>
+         <div>
+            <ul>
+                <li>
+                    <a href="#">Pre-Built PCs</a>
+                    <ul class="dropdown">
+                        <li><a href="">Gaming PCs</a></li>
+                        <li><a href="">Workstations</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Laptops</a>
+                    <ul class="dropdown">
+                        <li><a href="">Gaming Laptops</a></li>
+                        <li><a href="">Ultrabooks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">PC Components </a>
+                    <ul class="dropdown">
+                        <li><a href="">Graphics Cards</a></li>
+                        <li><a href="">Processors (CPUs)</a></li>
+                        <li><a href="">Motherboards</a></li>
+                        <li><a href="">Memory (RAM)</a></li>
+                        <li><a href="">Storage Devices</a></li>
+                        <li><a href="">Power Supplies (PSUs)</a></li>
+                        <li><a href="">Cooling Solutions</a></li>
+                        <li><a href="">Computer Cases</a></li>
+                    </ul>
+                    </li>
+            </ul>
+         </div>
+         <h1 id="power">Unleash Your Gaming Potential</h1>
+       </section>
+    </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#support">Customer Support</a>
-                <a href="#warranty">Warranty</a>
-                <a href="#shipping">Shipping Info</a>
-                <a href="#returns">Returns</a>
-                <a href="#contact">Contact Us</a>
-            </div>
-            <p>&copy; 2025 Apex Gaming. All rights reserved.</p>
+        <div class="foot-page">
+           <p>&copy; Samtech all rights reserved.</p>  
         </div>
     </footer>
+    
 </body>
 </html>

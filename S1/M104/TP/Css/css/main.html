@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*1. sélecteur qui poséde lattribut */
+        input[name]{
+            background-color: red;
+        }
+        /*1. sélecteur d'attribut qui a exactement la valeur.... */
+        input[name="nom"]{
+            background-color: blue;
+        }
+        /*1. sélecteur d'attribut qui a la valeur qui commence par...  */
+        input[name^=tél]{
+            background-color: green;
+        }
+        /*1. sélecteur d'attribut qui a la valeur qui se termine... */
+        input[name$=nom]{
+            background-color: yellow;
+        }
+        /*1. sélecteur d'attribut qui a la valeur qui contient .... */
+        input[name*=ma]{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>sélecteurs d'attribut</h1>
+    <form action="">
+        <input type="text" name="nom">
+        <br>
+        <input type="text" name="prénom">
+        <br>
+        <input type="email" name="email">
+        <br>
+        <input type="tel" name="téléphone">
+        <br>
+        <input type="text">
+    </form>
+</body>
+</html>
