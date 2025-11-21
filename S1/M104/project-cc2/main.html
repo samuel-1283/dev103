@@ -8,106 +8,110 @@
 </head>
 <body>
     <header class="head-page">
-        <nav class="navigation">
-            <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </div>
-            <input type="text" id="recherche" placeholder="Rechercher...">
-        </nav>
+     <section id="products">
+         <div>
+            <ul>
+                <li>
+                    <a href="#">Pre-Built PCs</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Gaming PCs</a></li>
+                        <li><a href="#">Workstations</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Laptops</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Gaming Laptops</a></li>
+                        <li><a href="#">Ultrabooks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">PC Components </a>
+                    <ul class="dropdown">
+                        <li><a href="#">Graphics Cards</a></li>
+                        <li><a href="#">Processors (CPUs)</a></li>
+                        <li><a href="#">Motherboards</a></li>
+                        <li><a href="#">Memory (RAM)</a></li>
+                        <li><a href="#">Storage Devices</a></li>
+                        <li><a href="#">Power Supplies (PSUs)</a></li>
+                        <li><a href="#">Cooling Solutions</a></li>
+                        <li><a href="#">Computer Cases</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="cart">🛒 Cart</button>
+            <a href="#" class="Login">Login</a>
+            <input type="text" placeholder="Search..." id="recherche">
+         </div>
+      </section>
     </header>
     <main>
         <!--Articles-->
        <section id="best-seller">
         <h1>Best Seller</h1>
         <div class="container">
-            <article class="article">
+            <article>
                 <img src="photos/elite.png" alt="">
-                <hr><span>Gaming PC Elite</span>
+                <span>Gaming PC Elite</span>
                 <p>RTX 4080 | i9-13900K</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="article">
-                <img src="photos/fast-ssd.png" alt="">
-                <hr><span>2TB NVMe SSD</span>
-                <p>Ultra-fast storage</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="article">
-                <img src="photos/gaming laptop.png" alt="">
-                <hr>
-                <span>Gaming Laptop Pro</span>
-                <p>RTX 4070 | 17" Display</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="article">
-                <img src="photos/RAM-XPG-Lancer-32GB-7200MHz-DDR5-Noir1-Photoroom.png" alt="">
-                <hr>
-                <span>32Gb DDR5 RAM</span>
-                <p>High-speed memory kit</p>
-                <button>Add to Cart</button>
-            </article>
-            <article class="article">
-                <img src="photos/rtx-4090.png" alt="" class="fix">
-                <hr>
-                <span>RTX 4090 Graphics Card</span>
-                <p>Ultimate gaming performance</p>
-                <button>Add to Cart</button>
+                <span class="prix">$2,999</span>
+                <button>+ Add to Cart</button>
             </article>
             <article>
-                <img src="photos/7950X.png" alt="" class="fix">
-                <hr>
-                <span>AMD Ryzen 9 7950X</span>
-                <p>16-core gaming processor</p>
-                <button>Add to Cart</button>
+                <img src="photos/fast-ssd.png" alt="">
+                <span>2TB NVMe SSD</span>
+                <p>Ultra-fast storage</p>
+                <span class="prix">$179</span>
+                <button>+ Add to Cart</button>
+            </article>
+            <article>
+                <img src="photos/gaming laptop.png" alt="">
+                <span>Gaming Laptop Pro</span>
+                <p>RTX 4070 | 17" Display</p>
+                <span class="prix">$1,899</span>
+                <button>+ Add to Cart</button>
+            </article>
+            <article>
+                <img src="photos/RAM-XPG-Lancer-32GB-7200MHz-DDR5-Noir1-Photoroom.png" alt="">
+                <span>32Gb DDR5 RAM</span>
+                <p>High-speed memory kit</p>
+                <span class="prix">$249</span>
+                <button>+ Add to Cart</button>
             </article>
         </div>
        </section>
-       <!--Categories-->
-       <section id="products">
-        <h1>Shop by Categories</h1>
-         <div>
-            <ul>
-                <li>
-                    <a href="#">Pre-Built PCs</a>
-                    <ul class="dropdown">
-                        <li><a href="">Gaming PCs</a></li>
-                        <li><a href="">Workstations</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">Laptops</a>
-                    <ul class="dropdown">
-                        <li><a href="">Gaming Laptops</a></li>
-                        <li><a href="">Ultrabooks</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="">PC Components </a>
-                    <ul class="dropdown">
-                        <li><a href="">Graphics Cards</a></li>
-                        <li><a href="">Processors (CPUs)</a></li>
-                        <li><a href="">Motherboards</a></li>
-                        <li><a href="">Memory (RAM)</a></li>
-                        <li><a href="">Storage Devices</a></li>
-                        <li><a href="">Power Supplies (PSUs)</a></li>
-                        <li><a href="">Cooling Solutions</a></li>
-                        <li><a href="">Computer Cases</a></li>
-                    </ul>
-                    </li>
-            </ul>
-         </div>
-         <h1 id="power">Unleash Your Gaming Potential</h1>
-       </section>
     </main>
+      <!--footer-->
     <footer>
-        <div class="foot-page">
-           <p>&copy; Samtech all rights reserved.</p>  
-        </div>
+  <!--features-->
+<section class="features">
+  <div class="feature-box">
+    <div class="icon">🚚</div>
+    <h3>Livraison<br>24H/48h</h3>
+    <p>Livraison à domicile<br>partout au Maroc</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">💵</div>
+    <h3>Paiement</h3>
+    <p>Paiement à la livraison<br>ou Virement BC</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">⭐</div>
+    <h3>Garantie</h3>
+    <p>Garantie 1 an pièces et<br>main d’œuvre.</p>
+  </div>
+
+  <div class="feature-box">
+    <div class="icon">🏅</div>
+    <h3>Service Client</h3>
+    <p>Disponible du lundi au samedi<br>de 10h30 à 19h00</p>
+  </div>
+</section>
+<section class="copy">
+    <p>&copy; All rights reserved Samtech.</p>  
+</section>
     </footer>
-    
 </body>
 </html>
