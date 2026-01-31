@@ -1,0 +1,15 @@
+algorithme
+variables
+    a : entier
+
+début
+    écrire("veuillez saisir un nombre") 
+    lire(a)
+    si a < 0 alors
+        ecrire("le nombre de valeurs négatives est :", a)
+        ecrire("le nombre de valeurs positives est :", -a)
+    sinon
+        ecrire("le nombre de valeurs négatives est :", -a)
+        ecrire("le nombre de valeurs positives est :", a)
+    fin_si
+fin

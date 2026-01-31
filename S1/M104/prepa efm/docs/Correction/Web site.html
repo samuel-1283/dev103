@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bannière CSS HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+header{
+    display: flex;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+}
+header nav{
+        background: lightgrey;
+        flex: 1;
+    }
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    }
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    }
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    }
+.dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: lightgray;
+        min-width: 160px;
+    }
+
+.dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    /* Triangle toggle dropdown */
+    .dropdown-toggle {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        border-style: solid;
+        border-width: 5px 5px 5px 5px;
+        border-color: black transparent transparent transparent;
+        transition: transform 0.3s;
+    }
+        .dropdown:hover .dropdown-toggle {
+        transform: rotate(180deg);
+    }
+
+.banner {
+    background-color: #3498db;
+    color: #fff; 
+    padding: 20px;
+    text-align: center; 
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner button {
+    background-color: lightgray; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.banner button:hover {
+    background-color: blue; 
+}
+.left{
+    flex: 1;
+}
+.banner .imgBanner{
+    flex: 1;
+}
+
+.products{
+    display: flex;
+}
+.products img{
+    flex: 1;
+}
+h1, h4{
+    text-align: center;
+}
+
+footer div{
+    display: flex;
+
+}
+footer{
+    background: gray;
+}
+footer div nav ul{
+    list-style: none;
+}
+
+.col1, .col2, .col3{
+    flex: 1;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="">
+    <nav>
+        <ul>
+            <li><a href="">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 2</a></li>
+                </ul>
+                <span class="dropdown-toggle"></span>
+            </li>
+            <li><a href="">Témoignage</a></li>
+            <li><a href="#">A propos de nous</a></li>
+            <li><a href=""> Contact</a></li>
+        </ul>
+    </nav>   
+</header>
+<main>
+    <div class="banner">
+        <div class="left">
+            <h1>Bienvenue sur notre site!</h1>
+            <p>Découvrez nos produits et services exceptionnels.</p>
+            <button>En savoir plus</button>
+        </div>
+        <img class="imgBanner" src="produits/unnamed.jpg" alt="">
+    </div>
+    <div>
+        <h1>Nos produits</h1>
+        <div class="products">
+            <img src="produits/produit1.jpg" alt="">
+            <img src="produits/produit2.jpg" alt="">
+            <img src="produits/produit3.jpg" alt="">
+        </div>
+        
+    </div>
+</main>
+<footer>
+    <div>
+        <nav class="col1">
+            <ul>
+                <li><strong>Qui sommes nous</strong></li>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Témoignage</a></li>
+                <li><a href="#">A propos de nous</a></li>
+            </ul>
+        </nav>   
+        <nav class="col2">
+            <ul>
+                <li><strong>Nos services</strong></li>
+                <li><a href="#">Service 1</a></li>
+                <li><a href="#">Service 2</a></li>
+                <li><a href="#">Service 2</a></li>
+            </ul>
+        </nav>   
+        <nav class="col3">
+        <ul>
+            <li><strong>Localisation</strong></li>
+            <li><a href="#">Maps</a></li>
+            <li><a href="#">Adresses</a></li>
+            <li><a href="#"> Contact</a></li>
+        </ul>
+    </nav>
+</div>
+<h4>&copy;Copyright 2024</h4>
+</footer>
+</body>
+</html>

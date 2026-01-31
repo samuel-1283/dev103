@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    nav{
+        background: lightblue;
+    }
+    img{
+        height: 50px;
+        width: 100px; 
+    }
+    nav ul {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+    }
+    nav ul li {
+    display: inline-block;
+    position: relative;
+    }
+
+    nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    }
+    /* Style de base pour le menu dropdown */
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: lightblue;
+        min-width: 160px;
+        list-style: none;
+        color: white;
+    }
+    hr {
+    width: 100%;
+}
+
+    .dropdown-menu li {
+        padding: 10px;
+    }
+    /* Affichage du menu dropdown lorsqu'il est survolé */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    /* Triangle toggle dropdown */
+    .dropdown-toggle {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        border-style: solid;
+        border-width: 5px 5px 5px 5px;
+        border-color: blue transparent transparent transparent;
+        transition: transform 0.3s;
+        transform-origin: center;
+    }
+    /* Inversion du triangle lorsqu'il est survolé */
+    .dropdown:hover .dropdown-toggle {
+        transform: rotate(180deg);
+    }
+    .pl{
+        border-radius: 5px;
+        width: 150px;
+        height: 30px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <img src="rest1.jpg" alt="">
+            <li><a href="">Mon RESTAURANT</a></li>
+            <li><a href="#">Accueil</a></li>
+            <li class="dropdown">
+                <a href="#">Menu</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Petit déjeuner</a></li>
+                    <hr>
+                    <li><a href="#">Déjeuner</a></li>
+                    <hr>
+                    <li><a href="#">Dîner</a></li>
+                </ul>
+                <span class="dropdown-toggle"></span>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href=""> Contact</a></li>
+        </ul>
+            <input type="text" placeholder="Taper un plat" class="pl">
+            <input type="submit" value="Recherche" class="pl">
+    </nav>    
+</body>
+</html>

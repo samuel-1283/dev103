@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les transformations</title>
+    <style>
+        .element{
+            width: 200px;
+            height: 200px;
+            background: orangered; 
+
+            /* 1. Translater suivant x ou y ou les deux*/
+            /* positifs: droit/bas */
+            /* Négatifs: gauche/haut */
+            /* transform: translate(100px,200px); */
+
+            /* 2. Agrondir/ rétrécir: scale (suivant X et/ou Y)*/
+            /* 1 → taille originale (pas de changement)
+            <1 → réduction de l’élément (ex. 0.5 → moitié de la taille)
+            >1 → agrandissement de l’élément (ex. 2 → double la taille)
+            0 → élément invisible 
+            Les valeurs négatives : inversent l'élément puis applique le scale */
+            /* transform: scale(3); */
+
+            /* 3. pivoter : tourner l'élément autour de son point d’origine (le centre par défaut)*/
+            /* valeur positive: rotation horaire */
+            /* valeur négative: rotation anti-horaire */
+            /* rotateX(Ang)/rotateY(Ang) */
+            transform: rotate(100deg);
+           
+            /* transform: rotate(30deg) translate(200px); */
+            /* transform:  translate(200px) rotate(30deg); */
+            
+            /* 4. déformer/ incliner sur X et/ou Y: skew() */
+            /* skewX()/ skewY() */
+            /* transform: skew(10deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="element"></div>
+</body>
+</html>

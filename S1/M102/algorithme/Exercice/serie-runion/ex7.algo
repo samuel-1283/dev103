@@ -1,0 +1,22 @@
+algorithme
+ Variables n, m : entiers
+        i, j : entiers
+        T[] :réel
+        somme : réel
+Début
+    Lire n, m
+
+    Pour i ← 1 à n Faire
+        Pour j ← 1 à m Faire
+            Lire T[i][j]
+        FinPour
+    FinPour
+
+    Pour i ← 1 à n Faire
+        somme ← 0
+        Pour j ← 1 à m Faire
+            somme ← somme + T[i][j]
+        FinPour
+        Écrire ("Somme de la ligne ", i, " = ", somme)
+    FinPour
+Fin

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animations</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      background: white;
+      padding: 4rem 2rem;
+    }
+
+    .card {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 3rem;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card h2 {
+      color: #667eea;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    /* Different animation styles */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .fade-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .scale-in {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.8s ease-out;
+    }
+
+    .scale-in.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .demo-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div>
+      <h1>Scroll Down</h1>
+      <p>Watch elements animate as you scroll</p>
+    </div>
+    <div class="arrow">↓</div>
+  </div>
+
+  <div class="content">
+    <div class="demo-section">
+      <div class="card fade-up">
+        <h2>Fade Up Animation</h2>
+        <p>This card slides up and fades in when it enters the viewport. It's the most common scroll animation pattern used on modern websites.</p>
+      </div>
+
+      <div class="card fade-left">
+        <h2>Fade From Left</h2>
+        <p>This element slides in from the left side. Great for alternating content layouts and creating visual interest.</p>
+      </div>
+
+      <div class="card fade-right">
+        <h2>Fade From Right</h2>
+        <p>This one comes from the right side. You can combine different directions to create dynamic page flows.</p>
+      </div>
+
+      <div class="card scale-in">
+        <h2>Scale In Animation</h2>
+        <p>This card starts small and scales up to full size. Perfect for highlighting important content or call-to-action sections.</p>
+      </div>
+
+      <div class="card fade-up">
+        <h2>Easy to Implement</h2>
+        <p>The Intersection Observer API makes these animations performant and easy to implement. No heavy libraries needed!</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1, // Trigger when 10% of element is visible
+      rootMargin: '0px 0px -50px 0px' // Start animation slightly before element enters viewport
+    });
+
+    // Observe all elements with animation classes
+    const animatedElements = document.querySelectorAll('.card, .fade-up, .fade-left, .fade-right, .scale-in');
+    animatedElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

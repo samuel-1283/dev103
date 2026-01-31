@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "nom": "pc gamer",
+    "prix": 6000.0,
+    "quantite": 15,
+    "categorie": "elctro"
+  }
+]

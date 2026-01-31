@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composants Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Les barres de navigation -->
+    <!-- navbar, navbar-expand-sm/md/..., navbar-nav, nav-item, nav-link, justify-content-center -->
+
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-6">
+                <h1>Barre de navigation</h1>
+              <nav class="navbar navbar-expand-lg justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#">Link1</a></li>
+                  <li class="nav-item"><a class="nav-link dropdown-toggle" href="#">Link2</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Link3</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Link4</a></li>
+                </ul>
+              </nav>
+               
+
+                
+            </div>
+    <!-- Liste/ menu déroulant (dropdown) -->
+    <!-- dropdown, dropdown-toggle, data-bs-toggle="dropdown", dropdown-menu, dropdown-item, dropdown-divider -->
+            <div class="col-6">
+                <h1>Menu déroulant</h1>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Button dropdown</button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link1</a></li>
+                    <li><a class="dropdown-item" href="#">Link2</a></li>
+                    <li><a class="dropdown-item" href="#">Link3</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Link4</a></li>
+                  </ul>
+                </div>
+             
+                
+            </div>
+    <!-- Pagination -->
+    <!-- pagination, page-item, page-link, active -->
+            <div class="col-6">
+                <h1>Pagination</h1>
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a href="#" class="page-link">Précedent</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">Suivant</a></li>
+              </ul>
+                
+            </div>
+    <!-- Breadcrumb -->
+    <!--  breadcrumb, breadcrumb-item -->
+            <div class="col-6">
+                <h1>Breadcrumb</h1>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">HTML5</a></li>
+                  <li class="breadcrumb-item"><a href="#">CSS3</a></li>
+                  <li class="breadcrumb-item"><a href="#">Bootstrap5</a></li>
+                  <li class="breadcrumb-item"><a href="#">Composants</a></li>
+                </ul>
+
+            </div>
+    <!-- Les badges -->
+    <!-- badge, bg-primary -->
+            <div class="col-6">
+                <h1>Les badges</h1>
+                <span class="badge bg-danger">New!</span>
+                <span class="badge bg-info">Information</span>
+                <span class="badge bg-dark">Sombre</span>
+                <span class="badge bg-success">Réussi!</span>
+                <span class="badge bg-primary">Primaire</span>
+                <span class="badge bg-secondary">Secondaire</span>
+                <span class="badge bg-warning">Avertissement</span>
+                <span class="badge bg-light">léger</span>
+
+
+            </div>
+
+    <!-- Les alertes,  Les liens d'alerts -->
+    <!-- alert, alert-success, alert-link, alert-dismissible, btn-close, data-bs-dismiss="alert" -->
+            <div class="col-6">
+                <h1>Les alertes</h1>
+                <div class="alert alert-success">
+                  <strong>Réussi:</strong>Opération réussie!
+                </div>
+                <div class="alert alert-danger">
+                  <strong>Echec:</strong>Opération échouée!
+                </div>
+                <div class="alert alert-info alert-dismissible">
+                  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                  <strong>Information:</strong>Vous devez <a href="#" class="alert-link">Lire ce message</a>
+                </div>
+            </div>
+
+    <!-- Barres de progression  -->
+    <!-- progress, progress-bar, bg-danger, progress-bar-striped, progress-bar-animated -->
+            <div class="col-6">
+                <h1>Barres de progression</h1>
+              <div class="progress" style="height: 30px;">
+                <div class="progress-bar bg-danger w-75 progress-bar-striped progress-bar-animated">75%</div>
+              </div>
+
+            </div>
+
+    <!-- Les cartes (Cards) -->
+    <!-- card, card-header, card-body, card-footer, card-title, card-text, card-link, card-img-top -->
+            <div class="col-6">
+                <h1>Les cartes (Cards)</h1>
+                
+             <div class="card">
+                <div class="card-header">
+                    <h1 class="card-title">Nom et prénom</h1>
+                    <img src="icon user.jpg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body">
+                   <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, tempore?</p> 
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="card-link">LinkedIn</a>
+                </div>
+
+             </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+  
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

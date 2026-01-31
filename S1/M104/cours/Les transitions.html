@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Transitions</title>
+    <style>
+        .element{
+            width: 200px;
+            height: 200px;
+            background: orangered;
+
+            /* transition-property */
+            transition-property: width, background;
+
+            /* transition-duration */
+            transition-duration: 6s;
+
+            /* transition-timing-function = comment la vitesse d'une transition évolue dans le temps. */
+            /* linear : La vitesse est constante tout au long de la transition.
+            ease : Commence lentement, accélère au milieu, puis ralentit à la fin (par défaut).
+            ease-in : Commence lentement, puis accélère.
+            ease-out : Commence rapidement, puis ralentit à la fin.
+            ease-in-out : Combine un début lent, une accélération, puis une fin lente. */
+
+            transition-timing-function: linear;
+
+            /* transition-delay: La durée d'attente de la transition */
+            transition-delay: 2s;
+
+            /* propriété raccourcie */
+            transition: width 6s linear, background 24s ease;
+
+        }
+        .element:hover{
+            width: 800px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="element"></div>
+    
+</body>
+</html>

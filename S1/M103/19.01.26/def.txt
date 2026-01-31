@@ -1,0 +1,10 @@
+.La surcharge d oerateurs vous permet de redefinir la signification
+d operateur en fonction de votre classe. C est la magie de la surcharge 
+d operateurs que nous avons pu utiliser l operateur + pour ajouter deux objects 
+numeriques ainsi que pour concatener deux objects chaine
+
+.la surcharge d operations nous permet d utiliser des operations standars tels que + - * ... 
+sur nos classes personnalises 
+
+.cette fonctionnalite en python qui permet a un meme operateur d avoir une signification 
+differente en fonction du contexte est appelee surcharge d operateur

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Typing Effect</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .container {
+            text-align: center;
+            color: white;
+            padding: 40px;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .typed-text {
+            font-size: 2.5rem;
+            min-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to</h1>
+        <div class="typed-text">
+            <span id="typed"></span>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Typed.js
+        var typed = new Typed('#typed', {
+            strings: [
+                'My Awesome Website',
+                'Innovation',
+                'Built with Passion',
+                'Your Success Story'
+            ],
+            typeSpeed: 50,        // Speed of typing (milliseconds per character)
+            backSpeed: 30,        // Speed of backspacing
+            backDelay: 2000,      // Delay before backspacing (ms)
+            startDelay: 500,      // Delay before typing starts (ms)
+            loop: true,           // Loop the animation
+            showCursor: true,     // Show blinking cursor
+            cursorChar: '|',      // Cursor character
+        });
+    </script>
+</body>
+</html>

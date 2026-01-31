@@ -1,0 +1,231 @@
+#realisr par badreddine ejjebli + anwar hirch
+apprenants = {"nom":""}
+formateurs = {"nom":""}
+modules = {"nom":""}
+salles = {"nom":""}
+seances = {"nom de module":"", "nom de formateur":"", "salle":"", "date":""}
+#les fonctions utiliser :
+
+#chez les apparenants
+#chez les apparenants
+#chez les apparenants
+
+def ajouter_appa():
+    nom = input("veuillez saisir le nom de l'apparenant")
+    apprenants.update({"nom":nom})
+    print("l'apparenant a ete ajoute")
+def modifier_appa():
+    nom = input("veuillez saisir le nom de l'apparenant")
+    apprenants.update({"nom": nom})
+def supprimer_appa():
+    nom = input("veuillez saisir le nom de l'apparenant")
+    apprenants.pop("nom","nom n'existe pas")
+def rechercher_appa():
+    pass
+def afficher_appa():
+    print(apprenants)
+
+#chez les formateurs
+#chez les formateurs
+#chez les formateurs
+
+def ajouter_for():
+    nom = input("veuillez saisir le nom de la formateur")
+    formateurs.update({"nom":nom})
+    print("le formateur a ete ajoute")
+def modifier_for():
+    nom = input("veuillez saisir le nom de la formateur")
+    formateurs.update({"nom":nom})
+def supprimer_for():
+    nom = input("veuillez saisir le nom de la formateur")
+    formateurs.pop("nom","nom n'existe pas")
+def rechercher_for():
+    pass
+def afficher_for():
+    print(formateurs)
+#chez les modules
+#chez les modules
+#chez les modules
+
+def ajouter_mod():
+    nom = input("veuillez saisir le nom de la module")
+    modules.update({"nom":nom})
+    print("le module a ete ajoute")
+def modifier_mod():
+    nom = input("veuillez saisir le nom de la module")
+    modules.update({"nom":nom})
+def supprimer_mod():
+    nom = input("veuillez saisir le nom de la module")
+    modules.pop("nom", "nom n'existe pas")
+def rechercher_mod():
+    pass
+def afficher_mod():
+    print(modules)
+#chez les slles
+#chez les slles
+#chez les slles
+
+def ajouter_sal():
+    nom = input("veuillez saisir le nom de la salle")
+    salles.update({"nom":nom})
+    print("la salle a ete ajoute")
+def modifier_sal():
+    nom = input("veuillez saisir le nom de la salle")
+    salles.update({"nom":nom})
+def supprimer_sal():
+    nom = input("veuillez saisir le nom de la salle")
+    salles.pop("nom", "nom n'existe pas")
+def rechercher_sal():
+    pass
+def afficher_sal():
+    print(salles)
+
+#chez les seances
+#chez les seances
+#chez les seances
+
+def ajouter_sea():
+    nom = input("veuillez saisir le nom de la seances")
+    seances.update({"nom":nom})
+    print("la seance a ete ajoute")
+def modifier_sea():
+    nom = input("veuillez saisir le nom de la seances")
+    seances.update({"nom":nom})
+def supprimer_sea():
+    nom = input("veuillez saisir le nom de la seances")
+    seances.pop("nom", "nom n'existe pas")
+def rechercher_sea():
+    pass
+def afficher_sea():
+    print(seances)
+def genere():
+    pass
+while True:
+    print("""
+    =================Menu Principal==================
+        1. Gestion des apparenants
+        2. gestion des formateurs
+        3. Gestion des modules
+        4. Gestion des salles
+        5. Gestion des seances
+        6. Generation rapport final 
+        0. Quitter
+    ==================================================""")
+    choix = int(input("Votre choix :"))
+    if choix == 1:
+        print("""
+        =====Gestion des apparenants=====
+        1. ajouter
+        2. modifier 
+        3. supprimer 
+        4. afficher
+        5. rechercher
+        """)
+        n = int(input("votre choix :"))
+        if n == 1:
+            ajouter_appa()
+        elif n == 2:
+            modifier_appa()
+        elif n == 3:
+            supprimer_appa()
+        elif n == 4:
+            afficher_appa()
+        elif n == 5:
+            rechercher_appa()
+        else:
+            print("choix invalide!")
+    elif choix == 2:
+        print("""
+        =====gestion des formateurs=====
+        1. ajouter
+        2. modifier 
+        3. supprimer
+        4. afficher 
+        5. rechercher
+        """)
+        n = int(input("votre choix :"))
+        if n == 1:
+            ajouter_for()
+        elif n == 2:
+            modifier_for()
+        elif n == 3:
+            supprimer_for()
+        elif n == 4:
+            afficher_for()
+        elif n == 5:
+            rechercher_for()
+        else:
+            print("choix invalide!")
+    elif choix == 3:
+        print("""
+        =====Gestion des modules=====
+        1. ajouter
+        2. modifier 
+        3. supprimer 
+        4. afficher
+        5. rechercher
+        """)
+        n = int(input("votre choix :"))
+        if n == 1:
+            ajouter_mod()
+        elif n == 2:
+            modifier_mod()
+        elif n == 3:
+            supprimer_mod()
+        elif n == 4:
+            afficher_mod()
+        elif n == 5:
+            rechercher_mod()
+        else:
+            print("choix invalide!")
+    elif choix == 4:
+        print("""
+        =====Gestion des salles=====
+        1. ajouter
+        2. modifier 
+        3. supprimer
+        4. afficher 
+        5. rechercher
+        """)
+        n = int(input("votre choix :"))
+        if n == 1:
+            ajouter_sal()
+        elif n == 2:
+            modifier_sal()
+        elif n == 3:
+            supprimer_sal()
+        elif n == 4:
+            afficher_sal()
+        elif n == 5:
+            rechercher_sal()
+        else:
+            print("choix invalide!")
+    elif choix == 5:
+        print("""
+        =====Gestion des seances=====
+        1. ajouter
+        2. modifier 
+        3. supprimer 
+        4. afficher
+        5. rechercher
+        """)
+        n = int(input("votre choix :"))
+        if n == 1:
+            ajouter_sea()
+        elif n == 2:
+            modifier_sea()
+        elif n == 3:
+            supprimer_sea()
+        elif n == 4:
+            afficher_sea()
+        elif n == 5:
+            rechercher_sea()
+        else:
+            print("choix invalide!")
+    elif choix == 6:
+        genere()
+    elif choix == 0:
+        print("Au revoir!")
+        break
+    else:
+        print("Choix invalide.")

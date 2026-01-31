@@ -1,0 +1,16 @@
+algorithme
+variables
+    tab1[8] : entier
+    tab2[8] : entier
+    tab_somme[8] : entier
+    i : entier
+début 
+    tab1 <- [4, 8, 7, 9, 1, 5, 4, 6]
+    tab2 <- [7, 6, 5, 2, 1, 3, 7, 4]
+    pour i de 1 à 8 faire
+        tab_somme[i] <- tab1[i] + tab2[i]
+    fin_pour
+    pour i de 1 à 8 faire
+        ecrire(tab_somme[i])
+    fin_pour
+fin

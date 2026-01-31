@@ -3,21 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact me</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Samtech | Contact </title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" href="../photos/logo.jpg" type="image/x-icon">
 </head>
 <body>
     <header class="head-page">
-        <nav class="navigation">
-            <div>
-                <ul>
-                    <li><a href="../main.html">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="contact.html">About</a></li>
-                </ul>
-            </div>
-        </nav>
+     <section id="navigation">
+         <div>
+            <ul>
+                <li>
+                    <a href="../main.html">Samtech</a>
+                </li>
+                <li>
+                    <a href="../Category/Pre-Built PCs/Pre-Built PCs.html">Pre-Built PCs</a>
+                </li>
+                <li>
+                    <a href="../Category/Portable/Portable pcs.html">Laptops</a>
+                </li>
+                <li>
+                    <a href="../Category/PC Components/PC Components.html">PC Components </a>
+                    <ul class="dropdown">
+                        <li><a href="../Category/PC Components/Graphics Cards.html">Graphics Cards</a></li>
+                        <li><a href="../Category/PC Components/Processors.html">Processors</a></li>
+                        <li><a href="../Category/PC Components/Motherboards.html">Motherboards</a></li>
+                        <li><a href="../Category/PC Components/Memory.html">Memory</a></li>
+                        <li><a href="../Category/PC Components/Storage.html">Storage</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input type="text" placeholder="Search..." id="search">
+                </li>
+                <li>
+                    <a href="#"><img src="../photos/man.png" alt="" width="20px" height="20px"></a>
+                    <ul class="dropdown">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </li>
+            </ul>
+         </div>
+      </section>
     </header>
-    
+    <div><a href="../main.html" class="home">Home</a></div>
+     <div>
+       <video autoplay loop muted id="live-video" style="opacity: 0.5;">
+           <source src="../videos/video.mp4" type="video/mp4">
+       </video>
+       <div class="video-text">   
+        <div id="idk"><a href="../main.html" class="home">Home</a></div>
+         <div class="login-container">
+            <h1>Contact</h1>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter you name ...">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter you Email ...">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Enter your message here... " rows="5" cols="30"></textarea>
+                <button type="submit">Send</button>
+            </form>
+         </div> 
+       </div>
+    </div>
+    <footer>
+  <!--features-->
+  <center>
+<section class="features">
+  <div class="feature-box">
+    <h3>Livraison<br>24H/48h</h3>
+    <p>Livraison à domicile<br>partout au Maroc</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Paiement</h3>
+    <p>Paiement à la livraison<br>ou Virement BC</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Garantie</h3>
+    <p>Garantie 1 an pièces et<br>main d’œuvre.</p>
+  </div>
+
+  <div class="feature-box">
+    <h3>Service Client</h3>
+    <p>Disponible du lundi au samedi<br>de 10h30 à 19h00</p>
+  </div>
+</section>
+</center>
+    <div class="social"> 
+        <a href="www.linkedin.com/in/badreddine-ejjebli-442b1b392" target="_blank"><img src="../photos/linkedin.png" alt=""></a>
+        <a href="https://github.com/samuel-1283" target="_blank"><img src="../photos/github.png" alt=""></a>
+    </div>    
+<section class="copy" align="center" style="font-size: 12px;">
+    <p class="info">&copy; All rights reserved Samtech.</p> 
+    <br>
+    <p class="info">Samtech is a gaming store website established: December 14, 2025 | Build: v1.0.0 | Last deployment: December 29, 2025 <br>
+        Developed in Khouribga, Bni Mellal-Khenifra, Morocco by Badreddine Ejjebli <br>
+        | Optimized for modern browsers | Accessibility compliant | Mobile responsive design |
+        <br>For inquiries, please contact: <a href="mailto:ejjeblibadr@gmail.com">ejjeblibadre@gmail.com</a></p>
+</section>
+    </footer>
 </body>
 </html>

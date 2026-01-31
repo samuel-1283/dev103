@@ -4,114 +4,447 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samtech</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="photos/logo.jpg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 <body>
-    <header class="head-page">
-     <section id="products">
+   <header class="head-page">
+     <section id="navigation">
          <div>
             <ul>
                 <li>
-                    <a href="#">Pre-Built PCs</a>
+                    <a href="#video">Samtech</a>
+                </li>
+                <li>
+                    <a href="Category/Pre-Built PCs/Pre-Built PCs.html">Pre-Built PCs</a>
+                </li>
+                <li>
+                    <a href="Category/Portable/Portable pcs.html">Laptops</a>
+                </li>
+                <li>
+                    <a href="Category/PC Components/PC Components.html">PC Components </a>
                     <ul class="dropdown">
-                        <li><a href="#">Gaming PCs</a></li>
-                        <li><a href="#">Workstations</a></li>
+                        <li><a href="Category/PC Components/Graphics Cards.html">Graphics Cards</a></li>
+                        <li><a href="Category/PC Components/Processors.html">Processors</a></li>
+                        <li><a href="Category/PC Components/Motherboards.html">Motherboards</a></li>
+                        <li><a href="Category/PC Components/Memory.html">Memory</a></li>
+                        <li><a href="Category/PC Components/Storage.html">Storage</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Laptops</a>
-                    <ul class="dropdown">
-                        <li><a href="#">Gaming Laptops</a></li>
-                        <li><a href="#">Ultrabooks</a></li>
-                    </ul>
+                    <input type="text" placeholder="Search..." id="search">
                 </li>
                 <li>
-                    <a href="#">PC Components </a>
+                    <div class="cart-icon-nav" onclick="toggleCart()">
+                        🛒 Cart
+                        <span class="cart-count" id="cart-count">0</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="photos/man.png" alt="" id="user-icon"></a>
                     <ul class="dropdown">
-                        <li><a href="#">Graphics Cards</a></li>
-                        <li><a href="#">Processors (CPUs)</a></li>
-                        <li><a href="#">Motherboards</a></li>
-                        <li><a href="#">Memory (RAM)</a></li>
-                        <li><a href="#">Storage Devices</a></li>
-                        <li><a href="#">Power Supplies (PSUs)</a></li>
-                        <li><a href="#">Cooling Solutions</a></li>
-                        <li><a href="#">Computer Cases</a></li>
+                        <li><a href="about/login.html">Login</a></li>
+                        <li><a href="about/register.html">Register</a></li>
+                        <li><a href="about/contact.html">Contact</a></li>
                     </ul>
                 </li>
             </ul>
-            <button class="cart">🛒 Cart</button>
-            <a href="#" class="Login">Login</a>
-            <input type="text" placeholder="Search..." id="recherche">
          </div>
       </section>
+      <input type="text" placeholder="Search for Products..." id="search2">
     </header>
+    
+    <section id="video">
+    <div class="video-container">
+       <video autoplay loop muted id="live-video" style="opacity: 0.5;">
+           <source src="videos/video.mp4" type="video/mp4">
+       </video>
+       <div class="video-text">
+            <div class="text-container">
+                 <div class="typed-text">
+                     <span id="typed"></span>
+                 </div>
+            </div>
+            <p>Dominate the Leaderboard with our top-of-the-line gaming PCs and components.</p>
+            <br>
+            <a href="#best-seller" class="spnw">Shop Now</a>
+            <a href="Category/Pre-Built PCs/Pre-Built PCs.html" class="nav">PreBuilt-pcs</a>
+            <a href="Category/Portable/Portable pcs.html" class="nav">Laptops</a>
+            <a href="Category/PC Components/PC Components.html" class="nav">PC Components</a>
+            <a href="about/login.html" class="nav">Login</a>
+            <a href="about/register.html" class="nav">Register</a>
+            <a href="about/contact.html" class="nav">Contact</a>
+        </div>
+    </div>
+    </section>
+    
     <main>
-        <!--Articles-->
        <section id="best-seller">
         <h1>Best Seller</h1>
         <div class="container">
             <article>
-                <img src="photos/elite.png" alt="">
+                <img src="photos/pc gamer/pc1.png" alt="">
                 <span>Gaming PC Elite</span>
                 <p>RTX 4080 | i9-13900K</p>
-                <span class="prix">$2,999</span>
-                <button>+ Add to Cart</button>
+                <span class="prix">27,316.82 MAD</span>
+                <button onclick="addToCart('Gaming PC Elite', 'RTX 4080 | i9-13900K', 27316.82, 'photos/pc gamer/pc1.png')">+ Buy Now</button>
             </article>
             <article>
-                <img src="photos/fast-ssd.png" alt="">
+                <img src="photos/composants/ssd/ssd1.png" alt="">
                 <span>2TB NVMe SSD</span>
                 <p>Ultra-fast storage</p>
-                <span class="prix">$179</span>
-                <button>+ Add to Cart</button>
+                <span class="prix">1,749.00 MAD</span>
+                <button onclick="addToCart('2TB NVMe SSD', 'Ultra-fast storage', 1749.00, 'photos/composants/ssd/ssd1.png')">+ Buy Now</button>
             </article>
             <article>
-                <img src="photos/gaming laptop.png" alt="">
+                <img src="photos/pc portable/portable4.png" alt="">
                 <span>Gaming Laptop Pro</span>
-                <p>RTX 4070 | 17" Display</p>
-                <span class="prix">$1,899</span>
-                <button>+ Add to Cart</button>
+                <p>RTX 4070 | 17&quot; Display</p>
+                <span class="prix">17,291.55 MAD</span>
+                <button onclick="addToCart('Gaming Laptop Pro', 'RTX 4070 | 17&quot; Display', 17291.55, 'photos/pc portable/portable4.png')">+ Buy Now</button>
             </article>
             <article>
-                <img src="photos/RAM-XPG-Lancer-32GB-7200MHz-DDR5-Noir1-Photoroom.png" alt="">
-                <span>32Gb DDR5 RAM</span>
+                <img src="photos/composants/memory/ram1.png" alt="">
+                <span>32GB DDR5 RAM</span>
                 <p>High-speed memory kit</p>
-                <span class="prix">$249</span>
-                <button>+ Add to Cart</button>
+                <span class="prix">5,490.00 MAD</span>
+                <button onclick="addToCart('32GB DDR5 RAM', 'High-speed memory kit', 5490.00, 'photos/composants/memory/ram1.png')">+ Buy Now</button>
             </article>
         </div>
        </section>
     </main>
-      <!--footer-->
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>🛒 Your Cart</h2>
+                <button class="close-cart" onclick="toggleCart()">✕</button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <div class="cart-empty">Your cart is empty</div>
+            </div>
+            <div class="cart-summary" id="cart-summary" style="display: none;">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">0.00 MAD</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
-  <!--features-->
-<section class="features">
-  <div class="feature-box">
-    <div class="icon">🚚</div>
-    <h3>Livraison<br>24H/48h</h3>
-    <p>Livraison à domicile<br>partout au Maroc</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="icon">💵</div>
-    <h3>Paiement</h3>
-    <p>Paiement à la livraison<br>ou Virement BC</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="icon">⭐</div>
-    <h3>Garantie</h3>
-    <p>Garantie 1 an pièces et<br>main d’œuvre.</p>
-  </div>
-
-  <div class="feature-box">
-    <div class="icon">🏅</div>
-    <h3>Service Client</h3>
-    <p>Disponible du lundi au samedi<br>de 10h30 à 19h00</p>
-  </div>
-</section>
-<section class="copy">
-    <p>&copy; All rights reserved Samtech.</p>  
-</section>
+        <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26602.92595523641!2d-7.681965466625986!3d33.543872437722456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sma!4v1767293362187!5m2!1sfr!2sma" width="80%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="features">
+                <div class="feature-box">
+                    <h3>Delivery<br>24H/48h</h3>
+                    <p>Livraison à domicile<br>partout au Maroc</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Payment</h3>
+                    <p>Payment on delivery<br>or Bank Transfer</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Warranty</h3>
+                    <p>1-year warranty on parts and labor</p>
+                </div>
+                <div class="feature-box">
+                    <h3>Customer Service</h3>
+                    <p>Available Monday to Saturday from 10:30 AM to 7:00 PM</p>
+                </div>
+            </section>
+        </center>
+        <div class="social"> 
+            <a href="www.linkedin.com/in/badreddine-ejjebli-442b1b392" target="_blank"><img src="photos/linkedin.png" alt=""></a>
+            <a href="https://github.com/samuel-1283" target="_blank"><img src="photos/github.png" alt=""></a>
+        </div>    
+        <section class="copy" align="center" style="font-size: 12px;">
+            <p class="info">&copy; All rights reserved Samtech.</p> 
+            <br>
+            <p class="info">Samtech is a gaming store website established: December 14, 2025 | Build: v1.0.0 | Last deployment: December 29, 2025 <br>
+                Developed in Khouribga, Bni Mellal-Khenifra, Morocco by Badreddine Ejjebli <br>
+                | Optimized for modern browsers | Accessibility compliant | Mobile responsive design |
+                <br>For inquiries, please contact: <a href="mailto:ejjeblibadr@gmail.com">ejjeblibadre@gmail.com</a></p>
+        </section>
     </footer>
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: [
+                'Elite Gaming PCs',
+                'Ultimate Performance',
+                'Unmatched Value',
+                'Built for Champions'
+            ],
+            typeSpeed: 60,        
+            backSpeed: 30,        
+            backDelay: 2000,      
+            startDelay: 500,      
+            loop: true,           
+            showCursor: true,     
+            cursorChar: '_',      
+        });
+
+        let cart = [];
+
+        function updateCartDisplay() {
+            const cartCount = document.getElementById('cart-count');
+            const cartItems = document.getElementById('cart-items');
+            const cartSummary = document.getElementById('cart-summary');
+            const cartTotal = document.getElementById('cart-total');
+
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            cartCount.style.display = totalItems > 0 ? 'flex' : 'none';
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="cart-empty">Your cart is empty</div>';
+                cartSummary.style.display = 'none';
+            } else {
+                cartItems.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-desc">${item.description}</div>
+                            <div class="cart-item-price">${item.price.toFixed(2)} MAD</div>
+                        </div>
+                        <div class="cart-item-controls">
+                            <div class="quantity-control">
+                                <button class="quantity-btn" onclick="updateQuantity(${index}, ${item.quantity - 1})">-</button>
+                                <span class="quantity-display">${item.quantity}</span>
+                                <button class="quantity-btn" onclick="updateQuantity(${index}, ${item.quantity + 1})">+</button>
+                            </div>
+                            <button class="remove-btn" onclick="removeFromCart(${index})">🗑️</button>
+                        </div>
+                    </div>
+                `).join('');
+                
+                cartSummary.style.display = 'block';
+                
+                const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                cartTotal.textContent = total.toFixed(2) + ' MAD';
+            }
+        }
+
+        function addToCart(name, description, price, image) {
+            const existingItem = cart.find(item => item.name === name);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    name: name,
+                    description: description,
+                    price: price,
+                    image: image,
+                    quantity: 1
+                });
+            }
+            
+            updateCartDisplay();
+            alert('✅ Product added to cart!');
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartDisplay();
+        }
+
+        function updateQuantity(index, newQuantity) {
+            if (newQuantity <= 0) {
+                removeFromCart(index);
+            } else {
+                cart[index].quantity = newQuantity;
+                updateCartDisplay();
+            }
+        }
+
+        function toggleCart() {
+            const modal = document.getElementById('cart-modal');
+            modal.classList.toggle('active');
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+            
+            // Hide cart modal and show checkout page
+            toggleCart();
+            showCheckoutPage();
+        }
+
+        function showCheckoutPage() {
+            // Create checkout overlay
+            const checkoutHTML = `
+                <div class="checkout-page" id="checkout-page">
+                    <div class="checkout-container">
+                        <div class="checkout-header">
+                            <h1>🛍️ Checkout</h1>
+                            <button class="close-checkout" onclick="closeCheckout()">✕</button>
+                        </div>
+                        
+                        <div class="checkout-content">
+                            <div class="checkout-left">
+                                <div class="checkout-section">
+                                    <h2>📦 Order Summary</h2>
+                                    <div class="order-items">
+                                        ${cart.map(item => `
+                                            <div class="order-item">
+                                                <div class="order-item-details">
+                                                    <strong>${item.name}</strong>
+                                                    <span>${item.description}</span>
+                                                    <span class="order-item-qty">Quantity: ${item.quantity}</span>
+                                                </div>
+                                                <div class="order-item-price">${(item.price * item.quantity).toFixed(2)} MAD</div>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                    <div class="order-total">
+                                        <span>Total:</span>
+                                        <span>${cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toFixed(2)} MAD</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="checkout-right">
+                                <div class="checkout-section">
+                                    <h2>📋 Contact Information</h2>
+                                    <form id="checkout-form" onsubmit="completeOrder(event)">
+                                        <div class="form-group">
+                                            <label>Full Name *</label>
+                                            <input type="text" name="name" required placeholder="Enter your full name">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Email *</label>
+                                            <input type="email" name="email" required placeholder="your.email@example.com">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Phone Number *</label>
+                                            <input type="tel" name="phone" required placeholder="+212 XXX XXX XXX">
+                                        </div>
+                                        
+                                        <h2>📍 Shipping Address</h2>
+                                        
+                                        <div class="form-group">
+                                            <label>Address *</label>
+                                            <input type="text" name="address" required placeholder="Street address">
+                                        </div>
+                                        
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label>City *</label>
+                                                <input type="text" name="city" required placeholder="City">
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label>Postal Code *</label>
+                                                <input type="text" name="postal" required placeholder="Postal Code">
+                                            </div>
+                                        </div>
+                                        
+                                        <h2>💳 Payment Method</h2>
+                                        
+                                        <div class="payment-methods">
+                                            <label class="payment-option">
+                                                <input type="radio" name="payment" value="cod" checked>
+                                                <span class="payment-label">
+                                                    <strong>💵 Cash on Delivery</strong>
+                                                    <small>Pay when you receive your order</small>
+                                                </span>
+                                            </label>
+                                            
+                                            <label class="payment-option">
+                                                <input type="radio" name="payment" value="transfer">
+                                                <span class="payment-label">
+                                                    <strong>🏦 Bank Transfer</strong>
+                                                    <small>Transfer to our bank account</small>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        
+                                        <button type="submit" class="place-order-btn">
+                                            Place Order
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', checkoutHTML);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCheckout() {
+            const checkoutPage = document.getElementById('checkout-page');
+            if (checkoutPage) {
+                checkoutPage.remove();
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function completeOrder(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const orderData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                address: formData.get('address'),
+                city: formData.get('city'),
+                postal: formData.get('postal'),
+                payment: formData.get('payment'),
+                items: cart,
+                total: cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toFixed(2)
+            };
+            
+            // Show success message
+            const checkoutPage = document.getElementById('checkout-page');
+            checkoutPage.innerHTML = `
+                <div class="checkout-container">
+                    <div class="success-message">
+                        <div class="success-icon">✅</div>
+                        <h1>Order Placed Successfully!</h1>
+                        <p>Thank you for your order, ${orderData.name}!</p>
+                        <div class="order-details">
+                            <p><strong>Order Total:</strong> ${orderData.total} MAD</p>
+                            <p><strong>Payment Method:</strong> ${orderData.payment === 'cod' ? 'Cash on Delivery' : 'Bank Transfer'}</p>
+                            <p><strong>Delivery Address:</strong> ${orderData.address}, ${orderData.city}</p>
+                        </div>
+                        <p class="success-note">We'll contact you at ${orderData.phone} to confirm your order.</p>
+                        <p class="success-note">A confirmation email has been sent to ${orderData.email}</p>
+                        <button class="continue-shopping-btn" onclick="closeCheckoutAndClearCart()">
+                            Continue Shopping
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            console.log('Order Data:', orderData);
+        }
+
+        function closeCheckoutAndClearCart() {
+            cart = [];
+            updateCartDisplay();
+            closeCheckout();
+        }
+
+        document.getElementById('cart-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                toggleCart();
+            }
+        });
+
+        updateCartDisplay();
+    </script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+property() sert a controler l'acces aux attributs d'une class 
+(lecture,modification,suppression),tout en gardant une syntaxe simple comme 
+un attribut.
+c'est tres utilise en programmation orientee object
+
+poo :
+    classe
+    object
+    encapsulation (__prive,public,#protege)
+    heritage (simple(unique), multiple, encascade)
+    polymorphisme()
+
+========================subcharge des methodes========================= 
+# la subcharge d'une methode permet de definir plusieurs fois une meme
+methode avec des arguments differents 
+# le compilateur choisi la methode qui etre doit appelle en fonction 
+du nombre et du type des arguments 
+# une methode est surcharge lorsqu'elle execute des actions differents selon 
+le type et le nombre des parametres transmis. 

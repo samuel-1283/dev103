@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les animations</title>
+    <style>
+        .element{
+            width: 200px;
+            height: 200px;
+            margin: auto 0;
+            background: orangered;
+
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            /* animation-name */
+                animation-name: pivot;
+
+            /* animation-duration */
+            animation-duration: 4s;
+
+            /* animation-timing-function : linear, steps(), ease, ease-in, ease-out, ease-in-out*/
+            animation-timing-function: linear;
+
+            /* animation-delay */
+            /* animation-delay: 2s; */
+
+            /* animation-iteration-count : number, infinite */
+            /* animation-iteration-count: infinite; */
+            
+            /* animation-direction: alternate, alternate-reverse*/
+            /* animation-direction: alternate-reverse; */
+
+            /* animation-fill-mode: backwards, forwards */
+            animation-fill-mode: forwards;
+        
+        }   
+        
+@keyframes pivot {
+   
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(330deg);
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="element"></div>
+</body>
+</html>
